@@ -1,0 +1,5 @@
+# id        tvKey       itemKey
+CME_GLBX    tv.GLBX     CME_market_state
+CME_XCME    tv.XCME     CME_floor_market_state
+CME_CLR     tv.ClearPort    CME_clearport_market_state
+SIX_XSWX    tv.XSWX     SIX_Swiss_Exchange_state
