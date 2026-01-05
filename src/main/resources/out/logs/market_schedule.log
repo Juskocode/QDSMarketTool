@@ -1,0 +1,41 @@
+2026-01-05T20:40:41.959220Z INFO loaded aggregated schedules from CSV: tv_keys=78
+2026-01-05T20:40:41.959767Z WARN market=CME_GLBX tv=tv.GLBX not found in CSV or schedule.properties; dxFeed failed: java.lang.IllegalArgumentException: broken schedule tv.GLBX; using fallback state=false
+2026-01-05T20:40:41.961144Z WARN market=CME_XCME tv=tv.XCME not found in CSV or schedule.properties; dxFeed failed: java.lang.IllegalArgumentException: broken schedule tv.XCME; using fallback state=false
+2026-01-05T20:40:41.962997Z ERROR per-minute schedule resolve failed market=CME_GLBX tv=tv.GLBX err=java.lang.IllegalArgumentException: broken schedule tv.GLBX; writing zeros
+2026-01-05T20:40:41.967259Z INFO wrote per-minute file file=src/main/resources/out/zabbix/zabbix_sender_input_CME_GLBX_20260105.txt lines=1440
+2026-01-05T20:40:41.968349Z ERROR per-minute schedule resolve failed market=CME_XCME tv=tv.XCME err=java.lang.IllegalArgumentException: broken schedule tv.XCME; writing zeros
+2026-01-05T20:40:41.970900Z INFO wrote per-minute file file=src/main/resources/out/zabbix/zabbix_sender_input_CME_XCME_20260105.txt lines=1440
+2026-01-05T20:40:41.971417Z INFO per-minute using CSV token for market=CME_CLR tv=tv.ClearPort schedule=-17001615
+2026-01-05T20:40:41.975166Z INFO wrote per-minute file file=src/main/resources/out/zabbix/zabbix_sender_input_CME_CLR_20260105.txt lines=1440
+2026-01-05T20:40:41.977051Z INFO per-minute using CSV token for market=SIX_XSWX tv=tv.XSWX schedule=r08001620a16201645
+2026-01-05T20:40:41.980742Z INFO wrote per-minute file file=src/main/resources/out/zabbix/zabbix_sender_input_SIX_XSWX_20260105.txt lines=1440
+2026-01-05T20:40:41.981361Z ERROR cannot persist prev state: java.nio.file.AccessDeniedException: /var/lib/market-sd
+2026-01-05T20:40:41.982177Z OK markets=4 lines=4 stateChanged=true
+2026-01-05T20:40:42.740131Z WARN failed to load external defaults, falling back to classpath: java.lang.IllegalArgumentException: cannot find holiday day list CME when parsing CME
+2026-01-05T20:40:42.748990Z WARN bad markets line, skipping: BAD LINE
+2026-01-05T20:40:42.753320Z INFO loaded aggregated schedules from CSV: tv_keys=78
+2026-01-05T20:40:42.761441Z WARN market=ID1 tv=tv.UNKNOWN not found in CSV or schedule.properties; dxFeed failed: java.lang.IllegalArgumentException: broken schedule tv.UNKNOWN; using fallback state=false
+2026-01-05T20:40:42.762558Z WARN market=ID2 tv=tv.ANOTHER not found in CSV or schedule.properties; dxFeed failed: java.lang.IllegalArgumentException: broken schedule tv.ANOTHER; using fallback state=false
+2026-01-05T20:40:42.765843Z ERROR per-minute schedule resolve failed market=ID1 tv=tv.UNKNOWN err=java.lang.IllegalArgumentException: broken schedule tv.UNKNOWN; writing zeros
+2026-01-05T20:40:42.774950Z INFO wrote per-minute file file=/var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/zbx_10182455204734925221_ID1_20260105.txt lines=1440
+2026-01-05T20:40:42.775492Z ERROR per-minute schedule resolve failed market=ID2 tv=tv.ANOTHER err=java.lang.IllegalArgumentException: broken schedule tv.ANOTHER; writing zeros
+2026-01-05T20:40:42.780069Z INFO wrote per-minute file file=/var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/zbx_10182455204734925221_ID2_20260105.txt lines=1440
+2026-01-05T20:40:42.785842Z OK markets=2 lines=2 stateChanged=false
+2026-01-05T20:40:42.788873Z TEST_LOG_MESSAGE
+2026-01-05T20:40:43.426044Z ERROR cannot persist prev state: java.nio.file.FileAlreadyExistsException: /var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/state_io13560507124247114927/not_a_dir
+2026-01-05T20:40:43.434318Z WARN bad markets line, skipping: ONLY_TWO TOKENS
+2026-01-05T20:40:43.434699Z WARN bad markets line, skipping: BAD tv.KEY
+2026-01-05T20:40:44.174827Z WARN failed to load external defaults, falling back to classpath: java.lang.IllegalArgumentException: cannot find holiday day list CME when parsing CME
+2026-01-05T20:40:44.215020Z INFO loaded aggregated schedules from CSV: tv_keys=78
+2026-01-05T20:40:44.232587Z WARN market=CME_GLBX tv=tv.GLBX not found in CSV or schedule.properties; dxFeed failed: java.lang.IllegalArgumentException: broken schedule tv.GLBX; using fallback state=false
+2026-01-05T20:40:44.237590Z WARN market=CME_XCME tv=tv.XCME not found in CSV or schedule.properties; dxFeed failed: java.lang.IllegalArgumentException: broken schedule tv.XCME; using fallback state=false
+2026-01-05T20:40:44.243804Z ERROR per-minute schedule resolve failed market=CME_GLBX tv=tv.GLBX err=java.lang.IllegalArgumentException: broken schedule tv.GLBX; writing zeros
+2026-01-05T20:40:44.257160Z INFO wrote per-minute file file=/var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/zbx_minute_5345693562863321258/zabbix_sender_input_CME_GLBX_20260105.txt lines=1440
+2026-01-05T20:40:44.259734Z ERROR per-minute schedule resolve failed market=CME_XCME tv=tv.XCME err=java.lang.IllegalArgumentException: broken schedule tv.XCME; writing zeros
+2026-01-05T20:40:44.267103Z INFO wrote per-minute file file=/var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/zbx_minute_5345693562863321258/zabbix_sender_input_CME_XCME_20260105.txt lines=1440
+2026-01-05T20:40:44.269910Z INFO per-minute using CSV token for market=CME_CLR tv=tv.ClearPort schedule=-17001615
+2026-01-05T20:40:44.276748Z INFO wrote per-minute file file=/var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/zbx_minute_5345693562863321258/zabbix_sender_input_CME_CLR_20260105.txt lines=1440
+2026-01-05T20:40:44.278292Z INFO per-minute using CSV token for market=SIX_XSWX tv=tv.XSWX schedule=r08001620a16201645
+2026-01-05T20:40:44.282769Z INFO wrote per-minute file file=/var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/zbx_minute_5345693562863321258/zabbix_sender_input_SIX_XSWX_20260105.txt lines=1440
+2026-01-05T20:40:44.284480Z ERROR cannot persist prev state: java.nio.file.AccessDeniedException: /var/lib/market-sd
+2026-01-05T20:40:44.288277Z OK markets=4 lines=4 stateChanged=true
