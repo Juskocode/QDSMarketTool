@@ -202,5 +202,22 @@ Python helper (qds_unique.py)
   python qds_unique.py schedule.properties --mode sources
   python qds_unique.py schedule.properties --mode schedules --full-fingerprint
 
-License
-- Internal or project-specific; set as appropriate.
+Licensing and third-party notices
+- This project integrates dxFeed scheduling data and libraries. Use of any dxFeed artifacts requires a valid license from Devexperts/dxFeed. You are responsible for ensuring your usage complies with your dxFeed agreement.
+  - Bundled/required runtime artifacts (placed under libs/ by you):
+    - dxfeed-api-<version>.jar (e.g., dxfeed-api-3.348.jar)
+    - dxlib-<version>.jar (e.g., dxlib-3.348.jar)
+    - qds-<version>.jar (e.g., qds-3.348.jar)
+    These are proprietary components owned by Devexperts/dxFeed and are not distributed by this repository. Do not redistribute them unless your license permits it.
+  - Defaults and schedules:
+    - The tool can load schedule definitions from the dxFeed defaults (classpath resource com/dxfeed/schedule/schedule.properties) or from an external dxfeed.schedule file you provide via --defaults.
+    - The included schedule_unique.csv is an aggregated reference of schedules intended for testing and development. It may reflect information derived from dxFeed defaults. Treat it as reference-only and do not redistribute it beyond the terms of your dxFeed license.
+  - Market data and venue calendars may be subject to exchange/vendor licensing in addition to dxFeed terms.
+
+  - dxFeed legal terms and licensing:
+    - dxFeed legal overview: https://dxfeed.com/legal
+    - Contact dxFeed for licensing questions: https://dxfeed.com/contact/
+
+- Trademarks: dxFeed and Devexperts are trademarks or registered trademarks of Devexperts LLC and/or its affiliates. All other product names, logos, and brands are property of their respective owners.
+
+- Project source code license: The application code in this repository is provided under your organization’s chosen license or project-specific terms. If you intend to publish or redistribute this code, update this section with the appropriate open-source or proprietary license text and include the corresponding LICENSE file.
