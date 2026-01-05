@@ -1,7 +1,11 @@
+import info.solidsoft.gradle.pitest.PitestPluginExtension
+
 plugins {
     id("java")
     // Provide `run` task to execute the tool from Gradle
     id("application")
+    // PIT mutation testing
+    id("info.solidsoft.pitest") version "1.15.0"
 }
 
 group = "org.example"
@@ -72,4 +76,23 @@ tasks.register<JavaExec>("runGolden") {
     classpath = sourceSets.main.get().runtimeClasspath
     mainClass.set("org.example.GoldenVectorGenerator")
     // No default args; pass via --args="..." on the command line
+}
+
+// ---- PIT mutation testing configuration ----
+extensions.configure<PitestPluginExtension>("pitest") {
+    // Plugin for JUnit 5 tests
+    junit5PluginVersion.set("1.2.1")
+    // Scope: mutate main classes under our package, run all tests
+    targetClasses.set(listOf("org.example.*"))
+    targetTests.set(listOf("org.example.*"))
+    outputFormats.set(listOf("HTML", "XML"))
+    timestampedReports.set(false)
+    threads.set(Runtime.getRuntime().availableProcessors())
+}
+
+// Convenience alias
+tasks.register("mutationTest") {
+    group = "verification"
+    description = "Run PIT mutation testing and generate HTML/XML reports under build/reports/pitest"
+    dependsOn("pitest")
 }

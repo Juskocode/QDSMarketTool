@@ -95,6 +95,20 @@ Generate golden vectors via Gradle
     --markets conf/markets.list \
     --out /tmp/zabbix_sender_input.txt
 
+Mutation testing reports (PIT)
+- This project is configured with PIT (pitest) to generate mutation testing reports for the org.example package.
+- How to run:
+  - ./gradlew pitest
+  - or the alias: ./gradlew mutationTest
+- Where to find the reports:
+  - HTML and XML reports under: build/reports/pitest
+  - The main index file is: build/reports/pitest/index.html
+- Notes:
+  - JUnit 5 is supported via the configured PIT JUnit 5 plugin.
+  - By default, PIT mutates classes under org.example.* and runs tests under org.example.*.
+  - You can tweak the scope by editing build.gradle.kts pitest { targetClasses / targetTests }.
+  - Mutation testing can take several minutes. Consider limiting scope during local development.
+
 CLI flags
 - --markets <path> — REQUIRED. Path to allowlist file; each non-comment line: "<id> <tvKey> <itemKey>".
 - --out <path> — Optional. Output file for Zabbix sender input. Default: src/main/resources/out/zabbix/zabbix_sender_input.txt.

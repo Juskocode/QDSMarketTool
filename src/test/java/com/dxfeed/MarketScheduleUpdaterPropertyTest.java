@@ -1,8 +1,7 @@
-package org.example;
+package com.dxfeed;
 
 import net.jqwik.api.*;
 import net.jqwik.api.constraints.IntRange;
-import org.junit.jupiter.api.Assertions;
 
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;

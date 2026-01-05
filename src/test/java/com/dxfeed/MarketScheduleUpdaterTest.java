@@ -1,15 +1,10 @@
-package org.example;
+package com.dxfeed;
 
 import com.dxfeed.schedule.Day;
-import com.dxfeed.schedule.Schedule;
 import com.dxfeed.schedule.Session;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
 
 import java.time.Instant;
-import java.time.Duration;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.anyLong;

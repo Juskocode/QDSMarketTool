@@ -39,3 +39,4 @@
 2026-01-05T20:40:44.282769Z INFO wrote per-minute file file=/var/folders/f5/19pnpvwx3jz743xshd1634hw0000gp/T/zbx_minute_5345693562863321258/zabbix_sender_input_SIX_XSWX_20260105.txt lines=1440
 2026-01-05T20:40:44.284480Z ERROR cannot persist prev state: java.nio.file.AccessDeniedException: /var/lib/market-sd
 2026-01-05T20:40:44.288277Z OK markets=4 lines=4 stateChanged=true
+2026-01-05T20:45:25.976159Z INFO loaded aggregated schedules from CSV: tv_keys=78
