@@ -1,10 +1,7 @@
-package org.example;
+package com.dxfeed;
 
 import com.dxfeed.schedule.Schedule;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -17,7 +14,6 @@ import java.util.*;
  * GoldenVectorGenerator
  * Generates per-minute golden vectors (0/1) for each tv.*
  * based on schedule_unique.csv and schedule.properties.
- *
  * Usage:
  *   ./gradlew run --args="-Pmain=golden --outDir src/main/resources/out/zabbix/golden --date 2026-01-05"
  * Or run directly:

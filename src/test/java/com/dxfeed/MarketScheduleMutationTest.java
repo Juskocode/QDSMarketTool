@@ -1,4 +1,4 @@
-package org.example;
+package com.dxfeed;
 
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.TestFactory;

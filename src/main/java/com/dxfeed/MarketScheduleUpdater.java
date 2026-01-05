@@ -1,4 +1,4 @@
-package org.example;
+package com.dxfeed;
 
 import com.dxfeed.schedule.Day;
 import com.dxfeed.schedule.Schedule;
