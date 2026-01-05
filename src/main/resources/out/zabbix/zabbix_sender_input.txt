@@ -1,0 +1,4 @@
+MarketSchedule CME_market_state 0
+MarketSchedule CME_floor_market_state 0
+MarketSchedule CME_clearport_market_state 1
+MarketSchedule SIX_Swiss_Exchange_state 0
